@@ -1,6 +1,6 @@
 package bcd.security;
 
-import bcd.config.Configuration;
+import bcd.config.GeneralOperation;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -12,13 +12,13 @@ import java.security.spec.X509EncodedKeySpec;
 
 public class KeyAccess {
     public static PublicKey getPublicKey() throws Exception{
-        byte[] keyBytes = Files.readAllBytes(Paths.get(Configuration.get_public_path()));
+        byte[] keyBytes = Files.readAllBytes(Paths.get(GeneralOperation.get_public_path()));
         PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(keyBytes);
-        return KeyFactory.getInstance(Configuration.getAlgorithm()).generatePublic(keySpec);
+        return KeyFactory.getInstance(GeneralOperation.getAlgorithm()).generatePublic(keySpec);
     }
     public static PrivateKey getPrivateKey() throws Exception{
-        byte[] keyBytes = Files.readAllBytes(Paths.get(Configuration.get_private_path()));
+        byte[] keyBytes = Files.readAllBytes(Paths.get(GeneralOperation.get_private_path()));
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(keyBytes);
-        return KeyFactory.getInstance(Configuration.getAlgorithm()).generatePrivate(keySpec);
+        return KeyFactory.getInstance(GeneralOperation.getAlgorithm()).generatePrivate(keySpec);
     }
 }

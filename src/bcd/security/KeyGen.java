@@ -1,6 +1,6 @@
 package bcd.security;
 
-import bcd.config.Configuration;
+import bcd.config.GeneralOperation;
 
 import java.security.*;
 
@@ -9,7 +9,7 @@ public class KeyGen {
     KeyPair kp;
 
     public KeyGen() throws NoSuchAlgorithmException {
-        kg = KeyPairGenerator.getInstance(Configuration.getAlgorithm());
+        kg = KeyPairGenerator.getInstance(GeneralOperation.getAlgorithm());
         kg.initialize(1024);
     }
     public static void createKeyPair(){
@@ -20,8 +20,8 @@ public class KeyGen {
             PrivateKey pvk = keyGen.kp.getPrivate();
 
             //write pbk and pvk into the files
-            Configuration.write_file(pbk.getEncoded(), Configuration.get_public_path());
-            Configuration.write_file(pvk.getEncoded(), Configuration.get_private_path());
+            GeneralOperation.write_file(pbk.getEncoded(), GeneralOperation.get_public_path());
+            GeneralOperation.write_file(pvk.getEncoded(), GeneralOperation.get_private_path());
         }catch(Exception e){
             e.printStackTrace();
         }

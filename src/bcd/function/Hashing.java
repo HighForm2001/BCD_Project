@@ -39,9 +39,8 @@ public class Hashing {
 
 
     }
-    public static String hash(String data, String algo) {
+    public static String hash(byte[] dataBytes, String algo) {
         String hashValue = null;
-        byte[] dataBytes = data.getBytes();
 
         MessageDigest MeDi = null;
 

@@ -1,6 +1,8 @@
 package bcd.config;
 
 public class GeneralOperation {
+    private static final String bcd_path = ".\\record\\blockchain\\bc.txt";
+
     private static final String pvk_path = ".\\record\\key\\private_key\\private_key.txt";
     private static final String pbk_path = ".\\record\\key\\public_key\\public_key.txt";
     private static final String Algorithm = "havent decided yet";
@@ -14,6 +16,7 @@ public class GeneralOperation {
     public static void write_file(byte[] codes, String path){
 
     }
+
     public static String getAlgorithm(){
         return Algorithm;
     }
@@ -23,5 +26,8 @@ public class GeneralOperation {
 
     public static void saveKey(String path, byte[] encoded) {
 
+    }
+    public static String getBcd_path(){
+        return bcd_path;
     }
 }

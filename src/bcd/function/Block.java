@@ -6,7 +6,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.List;
 
 public class Block implements Serializable {
     private Header header;
@@ -30,7 +29,7 @@ public class Block implements Serializable {
                     + timeStamp + "]";
         }
     }
-    private Record record;
+    private StudentRecord record;
     public Block(String prevHash){
         header = new Header();
         header.setTimeStamp(new Timestamp(System.currentTimeMillis()).getTime());
@@ -51,6 +50,6 @@ public class Block implements Serializable {
             return null;
         }
     }
-    public void setRecord(Record record){this.record = record;}
-    public Record getRecord(){return record;}
+    public void setRecord(StudentRecord record){this.record = record;}
+    public StudentRecord getRecord(){return record;}
 }

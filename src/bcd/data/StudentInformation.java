@@ -1,6 +1,8 @@
 package bcd.data;
 
-public class StudentInformation {
+import java.io.Serializable;
+
+public class StudentInformation implements Serializable {
     private String ID;
     private String name;
     private Gender gender;
@@ -19,6 +21,8 @@ public class StudentInformation {
         this.email = email;
         this.dob = dob;
         this.marital = marital;
+    }
+    public StudentInformation(){
     }
 
     public String getID() {
@@ -48,14 +52,19 @@ public class StudentInformation {
     public String getDob() {
         return dob;
     }
+    public Marital getMarital(){return marital;}
 
-    public String getMarital() {
-        switch(marital){
-            case SINGLE: return "Single";
-            case MARRIED: return "Married";
-            case WIDOWED: return "Widowed";
-            case DIVORCED: return "Divorced";
-            default: return "Separated";
-        }
+    @Override
+    public String toString() {
+        return "StudentInformation{" +
+                "ID='" + ID + '\'' +
+                ", name='" + name + '\'' +
+                ", gender=" + gender +
+                ", contact='" + contact + '\'' +
+                ", address='" + address + '\'' +
+                ", email='" + email + '\'' +
+                ", dob='" + dob + '\'' +
+                ", marital=" + marital +
+                '}';
     }
 }

@@ -1,6 +1,8 @@
 package bcd.data;
 
-public class PaymentTransaction {
+import java.io.Serializable;
+
+public class PaymentTransaction implements Serializable {
     private String transactionID;
     private String date;
     private double amount;
@@ -13,6 +15,9 @@ public class PaymentTransaction {
         this.amount = amount;
         this.receiptNumber = receiptNumber;
         this.studentID = studentID;
+    }
+    public PaymentTransaction(){
+
     }
 
     public String getTransactionID() {
@@ -33,5 +38,16 @@ public class PaymentTransaction {
 
     public String getStudentID() {
         return studentID;
+    }
+
+    @Override
+    public String toString() {
+        return "PaymentTransaction{" +
+                "transactionID='" + transactionID + '\'' +
+                ", date='" + date + '\'' +
+                ", amount= RM " + amount +
+                ", receiptNumber='" + receiptNumber + '\'' +
+                ", studentID='" + studentID + '\'' +
+                '}';
     }
 }

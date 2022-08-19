@@ -1,6 +1,8 @@
 package bcd.data;
 
-public class Certificate {
+import java.io.Serializable;
+
+public class Certificate implements Serializable {
     private final String CGPA;
     private final String Academic_Degrees;
     private final String Class;
@@ -19,6 +21,7 @@ public class Certificate {
         return Class;
     }
 
+
     public String getName() {
         return Name;
     }
@@ -32,5 +35,23 @@ public class Certificate {
         this.Class = Class;
         this.Name = Name;
         this.StudentID = StudentID;
+    }
+    public Certificate(){
+        CGPA = null;
+        Academic_Degrees = null;
+        Class = null;
+        Name = null;
+        StudentID = null;
+    }
+
+    @Override
+    public String toString() {
+        return "Certificate{" +
+                "CGPA='" + CGPA + '\'' +
+                ", Academic_Degrees='" + Academic_Degrees + '\'' +
+                ", Class='" + Class + '\'' +
+                ", Name='" + Name + '\'' +
+                ", StudentID='" + StudentID + '\'' +
+                '}';
     }
 }

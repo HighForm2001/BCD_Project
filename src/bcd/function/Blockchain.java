@@ -17,25 +17,14 @@ public class Blockchain {
     private static LinkedList<Block> DB = new LinkedList<>();//data structure
 
     //the very first block - genesis()
-    public static void genesis(){
+    public static void genesis(StudentRecord record){
         Block genesis = new Block("0");
+        genesis.setRecord(record);
         DB.add(genesis);
+        Blockchain.presist();
     }
-    private static final String BLOCKCHAIN_FILE = "Data Block";
 
-    public static void FileBlock(LinkedList<Block>chain) {
 
-        try (
-                FileOutputStream fileBlock = new FileOutputStream(BLOCKCHAIN_FILE);
-                ObjectOutputStream out = new ObjectOutputStream(fileBlock);
-        ) {
-            out.writeObject(DB);
-            System.out.println("File is Updated");
-        } catch (IOException e) {
-        } finally {
-
-        }
-    }
     public static void nextBlock(Block newBlock){
         DB = Blockchain.get();
         DB.add(newBlock);
@@ -47,8 +36,7 @@ public class Blockchain {
             ObjectInputStream in = new ObjectInputStream(fis);
             )
         {
-                return (LinkedList<Block>)in.readObject();
-
+            return (LinkedList<Block>)in.readObject();
         }catch (Exception e){
             e.printStackTrace();
             return null;
@@ -69,17 +57,20 @@ public class Blockchain {
     }
     public  static  void distribute(){
         //convert chain to string using API
-        String chain = new GsonBuilder().setPrettyPrinting().create().toJson(DB);
+        String chain = new GsonBuilder().setPrettyPrinting().create().toJson(Blockchain.get());
         System.out.println(chain);
         try{
             File f = new File(record_file);
-            if (f.exists())
-                Files.write(Paths.get(record_file),chain.getBytes(), StandardOpenOption.APPEND);
-            else
-                Files.write(Paths.get(record_file),chain.getBytes(),StandardOpenOption.CREATE);
+            Files.write(Paths.get(record_file),chain.getBytes(),StandardOpenOption.CREATE);
         }catch(Exception e){
             e.printStackTrace();
         }
+    }
+
+    public static void eliminate(){
+        File file = new File(master_binary);
+        if(file.exists())
+            file.delete();
     }
 
 }

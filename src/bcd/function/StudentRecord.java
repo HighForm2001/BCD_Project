@@ -2,23 +2,21 @@ package bcd.function;
 
 import bcd.data.*;
 import org.javatuples.Quintet;
-import org.javatuples.Septet;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Record implements Serializable {
+public class StudentRecord implements Serializable {
     public static final int SIZE = 10;
     private String merkleRoot = "0";
 
-    public Record() {
+    public StudentRecord() {
         recordList = new ArrayList<>(SIZE);
     }
 
     public String getMerkleRoot(){return merkleRoot;}
     public void setMerkleRoot(List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList){
-        //to be complete
         MerkleTree mt = MerkleTree.getInstance(recordList);
         mt.build();
         this.merkleRoot = mt.getRoot();

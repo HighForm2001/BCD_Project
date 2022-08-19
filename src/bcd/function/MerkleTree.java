@@ -27,10 +27,11 @@ public class MerkleTree {
         for(Quintet q: this.recordList){
             tempList.add(q);
         }
-        List<String> hashes = genRecordHashList_quintet(recordList);
+        List<String> hashes = genRecordHashList_quintet(tempList);
         while( hashes.size() != 1){
             hashes = genRecordHashList_string(hashes);
         }
+        this.root = hashes.get(0);
 
     }
     private List<String> genRecordHashList_quintet(List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList){
@@ -62,6 +63,5 @@ public class MerkleTree {
             i++;
         }
         return hashList;
-
     }
 }

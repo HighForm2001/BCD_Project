@@ -17,7 +17,11 @@ public class PaymentTransaction implements Serializable {
         this.studentID = studentID;
     }
     public PaymentTransaction(){
-
+        this.transactionID = "1";
+        this.date = "2/22/22";
+        this.amount = 223;
+        this.receiptNumber = "223";
+        this.studentID = "1";
     }
 
     public String getTransactionID() {

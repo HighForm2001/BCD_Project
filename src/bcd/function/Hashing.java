@@ -3,7 +3,7 @@ package bcd.function;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-
+import org.apache.commons.codec.binary.Hex;
 public class Hashing {
     public static class Salt{
         public static byte[] gen(){
@@ -24,17 +24,12 @@ public class Hashing {
 
                 byte[] hashBytes = MeDi.digest();
 
-                StringBuilder B = new StringBuilder();
-                for(int i = 0;i<hashBytes.length; i++){
-                    B.append(Integer.toHexString(0xFF & hashBytes[i]));
-
-                }
-                hashValue = B.toString();
+                return String.valueOf(Hex.encodeHex(hashBytes));
 
             } catch (NoSuchAlgorithmException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
+                return null;
             }
-            return hashValue;
         }
 
 
@@ -44,26 +39,18 @@ public class Hashing {
 
         MessageDigest MeDi = null;
 
-        String hash;
         try {
             MeDi = MessageDigest.getInstance(algo);
             MeDi.update(dataBytes);
             MeDi.update("apu".getBytes());
-            MeDi.update(Salt.gen());
-
             byte[] hashBytes = MeDi.digest();
 
-            StringBuilder B = new StringBuilder();
-            for (int i = 0; i < hashBytes.length; i++) {
-                B.append(Integer.toHexString(0xFF & hashBytes[i]));
-
-            }
-            hash = B.toString();
+            return String.valueOf(Hex.encodeHex(hashBytes));
 
         } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            return null;
         }
-        return hash;
 
     }
 

@@ -67,11 +67,6 @@ public class Blockchain {
         }
     }
 
-    public static void eliminate(){
-        File file = new File(master_binary);
-        if(file.exists())
-            file.delete();
-    }
 
 }
 

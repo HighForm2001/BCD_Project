@@ -23,6 +23,14 @@ public class StudentInformation implements Serializable {
         this.marital = marital;
     }
     public StudentInformation(){
+        ID = "1";
+        name = "cincai";
+        gender = Gender.MALE;
+        contact = "111";
+        address = "jalan";
+        email = "@m.com";
+        dob = "1/1/22";
+        marital = Marital.DIVORCED;
     }
 
     public String getID() {

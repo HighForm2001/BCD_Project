@@ -9,7 +9,7 @@ import java.nio.file.StandardOpenOption;
 import java.security.*;
 import java.util.Arrays;
 
-public class KeyGen {//还有东西还没做完感觉
+public class KeyGen {
     private KeyPairGenerator kg;
     private KeyPair kp;
 

@@ -28,9 +28,11 @@ public class StudentRecord implements Serializable {
     }
     public void add(Quintet toAdd){
         recordList.add(toAdd);
+        setMerkleRoot(recordList);
+
     }
     @Override
     public String toString(){
-        return "Record [recordList = " + recordList + "]";
+        return "Record [recordList = " + recordList + ", merkleroot = " + merkleRoot + "]";
     }
 }

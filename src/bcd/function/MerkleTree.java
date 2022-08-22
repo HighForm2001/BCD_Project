@@ -16,21 +16,20 @@ public class MerkleTree {
         this.recordList = recordList;
     }
     private static MerkleTree instance;
-    public static MerkleTree getInstance(List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList){
+    public static MerkleTree getInstance(List recordList){
         if (instance == null)
             return new MerkleTree(recordList);
         else
             return instance;
     }
+
     public void build(){
         List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>>tempList = new ArrayList<>();
-        for(Quintet q: this.recordList){
+        for(Quintet q: this.recordList)
             tempList.add(q);
-        }
         List<String> hashes = genRecordHashList_quintet(tempList);
-        while( hashes.size() != 1){
+        while( hashes.size() != 1)
             hashes = genRecordHashList_string(hashes);
-        }
         this.root = hashes.get(0);
 
     }
@@ -41,15 +40,19 @@ public class MerkleTree {
             Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction> left = recordList.get(i); //这边还要改
             i ++;
             Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction> right = null;
-            if(i != recordList.size())
-                right =recordList.get(i);
-            String hashing = Hashing.hash(left.add(right).toString().getBytes(),GeneralOperation.getSha_Algo());
+            String hashing;
+            if(i != recordList.size()) {
+                right = recordList.get(i);
+
+                hashing = Hashing.hash(left.add(right).toString().getBytes(),GeneralOperation.getSha_Algo());
+            }else
+                hashing = Hashing.hash(left.toString().getBytes(),GeneralOperation.getSha_Algo());
             hashList.add(hashing);
             i++;
         }
         return hashList;
     }
-    private List<String> genRecordHashList_string(List<String> record){
+    public List<String> genRecordHashList_string(List<String> record){//要改回来private
         List<String> hashList = new ArrayList<>();
         int i = 0;
         while(i < record.size()){

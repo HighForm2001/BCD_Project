@@ -37,11 +37,11 @@ public class Certificate implements Serializable {
         this.StudentID = StudentID;
     }
     public Certificate(){
-        CGPA = null;
-        Academic_Degrees = null;
-        Class = null;
-        Name = null;
-        StudentID = null;
+        CGPA = "4.0";
+        Academic_Degrees = "Degree";
+        Class = "Software Engineering";
+        Name = "Chin";
+        StudentID = "TP059235";
     }
 
     @Override

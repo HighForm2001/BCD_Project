@@ -5,7 +5,6 @@ import java.security.Key;
 
 public abstract class Crypto { //this one done
     protected Cipher cipher;
-
     public Crypto(String param){
         try{
             cipher = Cipher.getInstance(param);

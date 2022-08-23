@@ -9,7 +9,7 @@ public class GeneralOperation {
     private static final String sha_rsa_Algo = "SHA256WithRSA";
     private static final String xlsx_path = ".\\record\\xlsx\\student_record.xlsx";
     private static final String master_binary = "master/chain.bin";
-    private static final String signature_path = "record/user/signature/signature.txt";
+    private static final String encrypted_decrypted = "record/user/email/Encrypted_Decrypted.txt";
     public static String get_public_path(){
         return pbk_path;
     }
@@ -32,6 +32,6 @@ public class GeneralOperation {
     }
     public static String getSha_rsa_Algo(){return sha_rsa_Algo;}
     public static String getMaster_binary(){return master_binary;}
-    public static String get_signature_path(){return signature_path;}
+    public static String get_encrypted_decrypted_path(){return encrypted_decrypted;}
 
 }

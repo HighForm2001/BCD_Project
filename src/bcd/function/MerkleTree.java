@@ -5,13 +5,16 @@ import bcd.data.*;
 import org.javatuples.Quintet;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class MerkleTree {
 
     private List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList;
     private String root = "0";
+    private List<String> hashes = new LinkedList<>();
     public String getRoot(){return root;}
+    public List<String> getHashes(){return hashes;}
     private MerkleTree(List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList){
         this.recordList = recordList;
     }
@@ -31,7 +34,7 @@ public class MerkleTree {
         while( hashes.size() != 1)
             hashes = genRecordHashList_string(hashes);
         this.root = hashes.get(0);
-
+        this.hashes = hashes;
     }
     private List<String> genRecordHashList_quintet(List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList){
         List<String> hashList = new ArrayList<>();
@@ -43,7 +46,6 @@ public class MerkleTree {
             String hashing;
             if(i != recordList.size()) {
                 right = recordList.get(i);
-
                 hashing = Hashing.hash(left.add(right).toString().getBytes(),GeneralOperation.getSha_Algo());
             }else
                 hashing = Hashing.hash(left.toString().getBytes(),GeneralOperation.getSha_Algo());
@@ -52,7 +54,7 @@ public class MerkleTree {
         }
         return hashList;
     }
-    public List<String> genRecordHashList_string(List<String> record){//要改回来private
+    private List<String> genRecordHashList_string(List<String> record){
         List<String> hashList = new ArrayList<>();
         int i = 0;
         while(i < record.size()){

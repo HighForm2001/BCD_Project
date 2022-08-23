@@ -18,28 +18,24 @@ public class testingApp {
     public static void main(String[] args)throws Exception {
 //        testBlockchain();
 //        testMerkleTree();
-        testUser();
-        String email = "jychin47a";
-        String singature = testRegister(email);
-        boolean isValid = testLogin(email,singature);
-        System.out.println(isValid);
+        testRegister("jychin47@gmail.com");
+//        System.out.println(testLogin("jychin47@gmail.com"));
     }
+
 
 
     private static void testUser(){
         User u = new User();
         String email = "jychinsss";
-        String signature = u.register(email);
-        boolean isValid = u.login(email,signature);
-        System.out.println(isValid);
+        u.register(email);
     }
-    private static String testRegister(String email){
+    private static void testRegister(String email){
         User u = new User();
-        return u.register(email);
+        u.register(email);
     }
-    private static boolean testLogin(String email, String signature){
+    private static boolean testLogin(String email){
         User u = new User();
-        return u.login(email, signature);
+        return u.login(email);
     }
 
     public static void testBlockchain() throws Exception{
@@ -54,18 +50,6 @@ public class testingApp {
         record.add(myQuintet);
         record.add(myQuintet);
         System.out.println(record);
-        Block block = new Block("0");
-        block.setRecord(record);
-        TimeUnit.SECONDS.sleep(3);
-        Block block2 = new Block("0");
-        block2.setRecord(record);
-//        System.out.println(block);
-        Blockchain.genesis(record);
-        Blockchain.nextBlock(block);
-        Blockchain.nextBlock(block);
-        Blockchain.nextBlock(block2);
-        Blockchain.nextBlock(block2);
-        Blockchain.get().forEach(block1 -> System.out.println(block1.getRecord()));
-        Blockchain.distribute();
+
     }
 }

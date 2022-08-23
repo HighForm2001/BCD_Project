@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.security.*;
 import java.util.Arrays;
+import java.util.Base64;
 
 public class KeyGen {
     private KeyPairGenerator kg;
@@ -30,6 +31,7 @@ public class KeyGen {
             PrivateKey pvk = keyGen.kp.getPrivate();
 
             //write pbk and pvk into the files
+
             write_file(pbk.getEncoded(), GeneralOperation.get_public_path());
             write_file(pvk.getEncoded(), GeneralOperation.get_private_path());
         }catch(Exception e){
@@ -47,10 +49,7 @@ public class KeyGen {
         System.out.println(path);
         f.getParentFile().mkdirs();
         try{
-            if(f.exists())
-                Files.write(Paths.get(path),both, StandardOpenOption.APPEND);
-            else
-                Files.write(Paths.get(path), both, StandardOpenOption.CREATE);
+            Files.write(Paths.get(path), both, StandardOpenOption.CREATE);
         }catch(Exception e){
             System.out.println("Error in KeyGen line 44");
             e.printStackTrace();

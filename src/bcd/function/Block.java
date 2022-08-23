@@ -30,12 +30,13 @@ public class Block implements Serializable {
         }
     }
     private StudentRecord record;
-    public Block(String prevHash){
+    public Block(String prevHash, StudentRecord record){
         header = new Header();
         header.setTimeStamp(new Timestamp(System.currentTimeMillis()).getTime());
         header.setPrevHash(prevHash);
-        String blockHash =  Hashing.hash(getBytes(), GeneralOperation.getSha_Algo());
+        String blockHash =  Hashing.Salt.hash(getBytes(), GeneralOperation.getSha_Algo());
         header.setCurrHash((blockHash));
+        setRecord(record);
     }
 
     private byte[] getBytes() {

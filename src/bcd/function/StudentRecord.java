@@ -10,7 +10,7 @@ import java.util.List;
 public class StudentRecord implements Serializable {
     public static final int SIZE = 10;
     private String merkleRoot = "0";
-
+    private List<String> hashes = new ArrayList<>();
     public StudentRecord() {
         recordList = new ArrayList<>(SIZE);
     }
@@ -20,6 +20,7 @@ public class StudentRecord implements Serializable {
         MerkleTree mt = MerkleTree.getInstance(recordList);
         mt.build();
         this.merkleRoot = mt.getRoot();
+        this.hashes = mt.getHashes();
     }
     private List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList;
 
@@ -29,8 +30,8 @@ public class StudentRecord implements Serializable {
     public void add(Quintet toAdd){
         recordList.add(toAdd);
         setMerkleRoot(recordList);
-
     }
+    public List<String> getHashes(){return hashes;}
     @Override
     public String toString(){
         return "Record [recordList = " + recordList + ", merkleroot = " + merkleRoot + "]";

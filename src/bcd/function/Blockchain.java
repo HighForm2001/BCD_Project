@@ -18,8 +18,7 @@ public class Blockchain {
 
     //the very first block - genesis()
     public static void genesis(StudentRecord record){
-        Block genesis = new Block("0");
-        genesis.setRecord(record);
+        Block genesis = new Block("0",record);
         DB.add(genesis);
         Blockchain.presist();
     }

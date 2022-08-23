@@ -3,23 +3,17 @@ package bcd.client;
 import bcd.config.GeneralOperation;
 import bcd.crypto.Asymmetric;
 import bcd.crypto.KeyAccess;
-import bcd.data.*;
 import bcd.function.Block;
 import bcd.function.Blockchain;
 import bcd.function.Hashing;
 import bcd.function.StudentRecord;
 import bcd.signature.CustomedSign;
-import org.javatuples.Quintet;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class User {
@@ -61,7 +55,7 @@ public class User {
 
     private boolean isCorrect(StudentRecord record) {
         String mekleRoot = record.getMerkleRoot();
-        List<Block> blocks = Blockchain.get();
+        List<Block> blocks = Blockchain.retrieve_chain();
         Block block_record = blocks.get(blocks.indexOf(record));
         StudentRecord verify_record = block_record.getRecord();
         String verify_MekleRoot = verify_record.getMerkleRoot();

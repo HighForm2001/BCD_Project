@@ -27,9 +27,13 @@ public class StudentRecord implements Serializable {
     public List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> getRecordList() {
         return recordList;
     }
-    public void add(Quintet toAdd){
-        recordList.add(toAdd);
-        setMerkleRoot(recordList);
+    public boolean add(Quintet toAdd){
+        if(recordList.size() != SIZE) {
+            recordList.add(toAdd);
+            setMerkleRoot(recordList);
+            return true;
+        }
+        return false;
     }
     public List<String> getHashes(){return hashes;}
     @Override

@@ -25,11 +25,11 @@ public class Blockchain {
 
 
     public static void nextBlock(Block newBlock){
-        DB = Blockchain.get();
+        DB = Blockchain.retrieve_chain();
         DB.add(newBlock);
         Blockchain.presist();
     }
-    public static LinkedList<Block>get(){
+    public static LinkedList<Block> retrieve_chain(){
         try(
             FileInputStream fis = new FileInputStream(master_binary);
             ObjectInputStream in = new ObjectInputStream(fis);
@@ -56,7 +56,7 @@ public class Blockchain {
     }
     public  static  void distribute(){
         //convert chain to string using API
-        String chain = new GsonBuilder().setPrettyPrinting().create().toJson(Blockchain.get());
+        String chain = new GsonBuilder().setPrettyPrinting().create().toJson(Blockchain.retrieve_chain());
         System.out.println(chain);
         try{
             File f = new File(record_file);

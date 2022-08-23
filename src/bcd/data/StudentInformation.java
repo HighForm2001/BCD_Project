@@ -1,6 +1,7 @@
 package bcd.data;
 
 import java.io.Serializable;
+import java.util.Random;
 
 public class StudentInformation implements Serializable {
     private String ID;
@@ -31,6 +32,30 @@ public class StudentInformation implements Serializable {
         email = "@m.com";
         dob = "1/1/22";
         marital = Marital.DIVORCED;
+    }
+    public StudentInformation(String name, String ID){ //for auto generation purpose
+        this.ID = ID;
+        this.name = name;
+        Random random = new Random();
+        if(random.nextInt()%2==0)
+            gender = Gender.MALE;
+        else
+            gender = Gender.FEMALE;
+        contact = "111";
+        address = "jalan";
+        email = "@m.com";
+        dob = "1/1/22";
+        int random_marital = random.nextInt();
+        if(random_marital%5 == 0)
+            marital = Marital.DIVORCED;
+        else if(random_marital%5 == 1)
+            marital = Marital.MARRIED;
+        else if(random_marital%5 == 2)
+            marital = Marital.SINGLE;
+        else if(random_marital%5 == 3)
+            marital = Marital.SEPARATED;
+        else
+            marital = Marital.WIDOWED;
     }
 
     public String getID() {

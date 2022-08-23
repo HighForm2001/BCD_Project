@@ -2,10 +2,10 @@ package bcd.gui;
 
 import javax.swing.*;
 
-public class LoginPage {
+public class Register {
     private JTabbedPane tabbedPane1;
     private JPanel panel1;
+    private JButton loginPageButton;
     private JTextField textField1;
-    private JButton loginButton;
-    private JButton signUpButton;
+    private JButton registerButton;
 }

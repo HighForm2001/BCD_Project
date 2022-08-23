@@ -2,14 +2,14 @@
   {
     "header": {
       "index": 0,
-      "currHash": "e41c35abde4b8ffb05857465de1d5302fc14bfbdd173d9cd1f1523a77646cc5d",
+      "currHash": "6b24fa6bdad3442b63de2bb977458cf94a5ea691be8c28b846c2045712f93239",
       "prevHash": "0",
-      "timeStamp": 1661255033046
+      "timeStamp": 1661263264237
     },
     "record": {
-      "merkleRoot": "56e10032d6a81556511905ed58016b4e08fa6dc8cb9fd7bbb0aac663171e7f1d",
+      "merkleRoot": "d7a82f93ea0be8e78b3f68b2d72a075e705f77c88f5d53cae0e7c6372547ae45",
       "hashes": [
-        "56e10032d6a81556511905ed58016b4e08fa6dc8cb9fd7bbb0aac663171e7f1d"
+        "d7a82f93ea0be8e78b3f68b2d72a075e705f77c88f5d53cae0e7c6372547ae45"
       ],
       "recordList": [
         {
@@ -21,7 +21,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "DIVORCED"
+            "marital": "WIDOWED"
           },
           "val1": {
             "module": "testing",
@@ -59,7 +59,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "DIVORCED"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -98,7 +98,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "DIVORCED"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -138,7 +138,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "MARRIED"
+            "marital": "WIDOWED"
           },
           "val1": {
             "module": "testing",
@@ -176,7 +176,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "MARRIED"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -215,7 +215,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "MARRIED"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -372,7 +372,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "SEPARATED"
+            "marital": "DIVORCED"
           },
           "val1": {
             "module": "testing",
@@ -410,7 +410,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SEPARATED"
+              "marital": "DIVORCED"
             },
             {
               "module": "testing",
@@ -449,7 +449,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SEPARATED"
+              "marital": "DIVORCED"
             },
             {
               "module": "testing",
@@ -484,124 +484,7 @@
           "val0": {
             "ID": "(4)",
             "name": "Student 4",
-            "gender": "FEMALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "WIDOWED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(4)",
-              "name": "Student 4",
-              "gender": "FEMALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(4)",
-              "name": "Student 4",
-              "gender": "FEMALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
-        },
-        {
-          "val0": {
-            "ID": "(5)",
-            "name": "Student 5",
-            "gender": "FEMALE",
+            "gender": "MALE",
             "contact": "111",
             "address": "jalan",
             "email": "@m.com",
@@ -637,9 +520,9 @@
           },
           "valueArray": [
             {
-              "ID": "(5)",
-              "name": "Student 5",
-              "gender": "FEMALE",
+              "ID": "(4)",
+              "name": "Student 4",
+              "gender": "MALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
@@ -676,14 +559,131 @@
           ],
           "valueList": [
             {
-              "ID": "(5)",
-              "name": "Student 5",
-              "gender": "FEMALE",
+              "ID": "(4)",
+              "name": "Student 4",
+              "gender": "MALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
               "marital": "MARRIED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        },
+        {
+          "val0": {
+            "ID": "(5)",
+            "name": "Student 5",
+            "gender": "MALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "SEPARATED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(5)",
+              "name": "Student 5",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "SEPARATED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(5)",
+              "name": "Student 5",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "SEPARATED"
             },
             {
               "module": "testing",
@@ -723,7 +723,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "SEPARATED"
+            "marital": "WIDOWED"
           },
           "val1": {
             "module": "testing",
@@ -761,7 +761,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SEPARATED"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -800,7 +800,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SEPARATED"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -840,7 +840,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "DIVORCED"
+            "marital": "SEPARATED"
           },
           "val1": {
             "module": "testing",
@@ -878,7 +878,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "DIVORCED"
+              "marital": "SEPARATED"
             },
             {
               "module": "testing",
@@ -917,7 +917,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "DIVORCED"
+              "marital": "SEPARATED"
             },
             {
               "module": "testing",
@@ -957,7 +957,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "WIDOWED"
+            "marital": "SINGLE"
           },
           "val1": {
             "module": "testing",
@@ -995,7 +995,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "WIDOWED"
+              "marital": "SINGLE"
             },
             {
               "module": "testing",
@@ -1034,7 +1034,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "WIDOWED"
+              "marital": "SINGLE"
             },
             {
               "module": "testing",
@@ -1074,7 +1074,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "SINGLE"
+            "marital": "WIDOWED"
           },
           "val1": {
             "module": "testing",
@@ -1112,7 +1112,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SINGLE"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -1151,7 +1151,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SINGLE"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -1188,137 +1188,20 @@
   {
     "header": {
       "index": 0,
-      "currHash": "4b73fdbfb817b18b078bd0da354e7a2340264ad68ec23e2c55f9f240625f5053",
-      "prevHash": "e41c35abde4b8ffb05857465de1d5302fc14bfbdd173d9cd1f1523a77646cc5d",
-      "timeStamp": 1661255033145
+      "currHash": "3e1865aa4303690e96db20d6ea3e52e5c532beb4a4190651365dcfe8d1f5b151",
+      "prevHash": "6b24fa6bdad3442b63de2bb977458cf94a5ea691be8c28b846c2045712f93239",
+      "timeStamp": 1661263264351
     },
     "record": {
-      "merkleRoot": "59e2934bca58298ca4c96e85acb945afa0c727f52ef16795db684c0cc8c388f0",
+      "merkleRoot": "913b0e38474c3534c338edb47657664f19334bd00ef80157fd736da334bd930f",
       "hashes": [
-        "59e2934bca58298ca4c96e85acb945afa0c727f52ef16795db684c0cc8c388f0"
+        "913b0e38474c3534c338edb47657664f19334bd00ef80157fd736da334bd930f"
       ],
       "recordList": [
         {
           "val0": {
-            "ID": "(11)",
-            "name": "Student 11",
-            "gender": "FEMALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "DIVORCED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(11)",
-              "name": "Student 11",
-              "gender": "FEMALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "DIVORCED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(11)",
-              "name": "Student 11",
-              "gender": "FEMALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "DIVORCED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
-        },
-        {
-          "val0": {
-            "ID": "(12)",
-            "name": "Student 12",
+            "ID": "(10)",
+            "name": "Student 10",
             "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
@@ -1355,8 +1238,8 @@
           },
           "valueArray": [
             {
-              "ID": "(12)",
-              "name": "Student 12",
+              "ID": "(10)",
+              "name": "Student 10",
               "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
@@ -1394,8 +1277,8 @@
           ],
           "valueList": [
             {
-              "ID": "(12)",
-              "name": "Student 12",
+              "ID": "(10)",
+              "name": "Student 10",
               "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
@@ -1434,8 +1317,8 @@
         },
         {
           "val0": {
-            "ID": "(13)",
-            "name": "Student 13",
+            "ID": "(11)",
+            "name": "Student 11",
             "gender": "MALE",
             "contact": "111",
             "address": "jalan",
@@ -1472,8 +1355,8 @@
           },
           "valueArray": [
             {
-              "ID": "(13)",
-              "name": "Student 13",
+              "ID": "(11)",
+              "name": "Student 11",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -1511,8 +1394,8 @@
           ],
           "valueList": [
             {
-              "ID": "(13)",
-              "name": "Student 13",
+              "ID": "(11)",
+              "name": "Student 11",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -1551,8 +1434,8 @@
         },
         {
           "val0": {
-            "ID": "(14)",
-            "name": "Student 14",
+            "ID": "(12)",
+            "name": "Student 12",
             "gender": "MALE",
             "contact": "111",
             "address": "jalan",
@@ -1589,8 +1472,8 @@
           },
           "valueArray": [
             {
-              "ID": "(14)",
-              "name": "Student 14",
+              "ID": "(12)",
+              "name": "Student 12",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -1628,8 +1511,8 @@
           ],
           "valueList": [
             {
-              "ID": "(14)",
-              "name": "Student 14",
+              "ID": "(12)",
+              "name": "Student 12",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -1668,14 +1551,248 @@
         },
         {
           "val0": {
-            "ID": "(15)",
-            "name": "Student 15",
-            "gender": "MALE",
+            "ID": "(13)",
+            "name": "Student 13",
+            "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "SINGLE"
+            "marital": "DIVORCED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(13)",
+              "name": "Student 13",
+              "gender": "FEMALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(13)",
+              "name": "Student 13",
+              "gender": "FEMALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        },
+        {
+          "val0": {
+            "ID": "(14)",
+            "name": "Student 14",
+            "gender": "FEMALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "SEPARATED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(14)",
+              "name": "Student 14",
+              "gender": "FEMALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "SEPARATED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(14)",
+              "name": "Student 14",
+              "gender": "FEMALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "SEPARATED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        },
+        {
+          "val0": {
+            "ID": "(15)",
+            "name": "Student 15",
+            "gender": "FEMALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "WIDOWED"
           },
           "val1": {
             "module": "testing",
@@ -1708,12 +1825,12 @@
             {
               "ID": "(15)",
               "name": "Student 15",
-              "gender": "MALE",
+              "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SINGLE"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -1747,12 +1864,12 @@
             {
               "ID": "(15)",
               "name": "Student 15",
-              "gender": "MALE",
+              "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "SINGLE"
+              "marital": "WIDOWED"
             },
             {
               "module": "testing",
@@ -1904,7 +2021,7 @@
           "val0": {
             "ID": "(17)",
             "name": "Student 17",
-            "gender": "MALE",
+            "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
             "email": "@m.com",
@@ -1942,7 +2059,7 @@
             {
               "ID": "(17)",
               "name": "Student 17",
-              "gender": "MALE",
+              "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
@@ -1981,7 +2098,7 @@
             {
               "ID": "(17)",
               "name": "Student 17",
-              "gender": "MALE",
+              "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
@@ -2021,12 +2138,12 @@
           "val0": {
             "ID": "(18)",
             "name": "Student 18",
-            "gender": "MALE",
+            "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "WIDOWED"
+            "marital": "DIVORCED"
           },
           "val1": {
             "module": "testing",
@@ -2059,12 +2176,12 @@
             {
               "ID": "(18)",
               "name": "Student 18",
-              "gender": "MALE",
+              "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "WIDOWED"
+              "marital": "DIVORCED"
             },
             {
               "module": "testing",
@@ -2098,12 +2215,12 @@
             {
               "ID": "(18)",
               "name": "Student 18",
-              "gender": "MALE",
+              "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "WIDOWED"
+              "marital": "DIVORCED"
             },
             {
               "module": "testing",
@@ -2143,7 +2260,7 @@
             "address": "jalan",
             "email": "@m.com",
             "dob": "1/1/22",
-            "marital": "WIDOWED"
+            "marital": "SINGLE"
           },
           "val1": {
             "module": "testing",
@@ -2181,7 +2298,7 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "WIDOWED"
+              "marital": "SINGLE"
             },
             {
               "module": "testing",
@@ -2220,7 +2337,140 @@
               "address": "jalan",
               "email": "@m.com",
               "dob": "1/1/22",
-              "marital": "WIDOWED"
+              "marital": "SINGLE"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "header": {
+      "index": 0,
+      "currHash": "2e597464dd157e80baaea4888eb7a33ef97e2efa2a43d99482ad52dfbd7335e1",
+      "prevHash": "3e1865aa4303690e96db20d6ea3e52e5c532beb4a4190651365dcfe8d1f5b151",
+      "timeStamp": 1661263264390
+    },
+    "record": {
+      "merkleRoot": "8c0431ff04b400e2e24bf8bfd6a3c72b0b2aea5fdbb044bfcdef951eb845bc0a",
+      "hashes": [
+        "8c0431ff04b400e2e24bf8bfd6a3c72b0b2aea5fdbb044bfcdef951eb845bc0a"
+      ],
+      "recordList": [
+        {
+          "val0": {
+            "ID": "(20)",
+            "name": "Student 20",
+            "gender": "FEMALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "DIVORCED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(20)",
+              "name": "Student 20",
+              "gender": "FEMALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(20)",
+              "name": "Student 20",
+              "gender": "FEMALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
             },
             {
               "module": "testing",
@@ -2253,8 +2503,242 @@
         },
         {
           "val0": {
-            "ID": "(20)",
-            "name": "Student 20",
+            "ID": "(21)",
+            "name": "Student 21",
+            "gender": "MALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "MARRIED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(21)",
+              "name": "Student 21",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "MARRIED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(21)",
+              "name": "Student 21",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "MARRIED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        },
+        {
+          "val0": {
+            "ID": "(22)",
+            "name": "Student 22",
+            "gender": "MALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "DIVORCED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(22)",
+              "name": "Student 22",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(22)",
+              "name": "Student 22",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        },
+        {
+          "val0": {
+            "ID": "(23)",
+            "name": "Student 23",
             "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
@@ -2291,8 +2775,8 @@
           },
           "valueArray": [
             {
-              "ID": "(20)",
-              "name": "Student 20",
+              "ID": "(23)",
+              "name": "Student 23",
               "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
@@ -2330,8 +2814,8 @@
           ],
           "valueList": [
             {
-              "ID": "(20)",
-              "name": "Student 20",
+              "ID": "(23)",
+              "name": "Student 23",
               "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
@@ -2367,261 +2851,11 @@
               "studentID": "1"
             }
           ]
-        }
-      ]
-    }
-  },
-  {
-    "header": {
-      "index": 0,
-      "currHash": "4a8076e19237bbf851aeb217670120cb047cfca0ac8efa2a3afaba39a4c99712",
-      "prevHash": "4b73fdbfb817b18b078bd0da354e7a2340264ad68ec23e2c55f9f240625f5053",
-      "timeStamp": 1661255145656
-    },
-    "record": {
-      "merkleRoot": "f027dfbb8656e79544928eb57d972bcae3d92f94f3fa95becbbe3a91e632f515",
-      "hashes": [
-        "f027dfbb8656e79544928eb57d972bcae3d92f94f3fa95becbbe3a91e632f515"
-      ],
-      "recordList": [
-        {
-          "val0": {
-            "ID": "(0)",
-            "name": "Student 0",
-            "gender": "MALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "WIDOWED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(0)",
-              "name": "Student 0",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(0)",
-              "name": "Student 0",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
         },
         {
           "val0": {
-            "ID": "(1)",
-            "name": "Student 1",
-            "gender": "FEMALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "WIDOWED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(1)",
-              "name": "Student 1",
-              "gender": "FEMALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(1)",
-              "name": "Student 1",
-              "gender": "FEMALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
-        },
-        {
-          "val0": {
-            "ID": "(2)",
-            "name": "Student 2",
+            "ID": "(24)",
+            "name": "Student 24",
             "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
@@ -2658,8 +2892,8 @@
           },
           "valueArray": [
             {
-              "ID": "(2)",
-              "name": "Student 2",
+              "ID": "(24)",
+              "name": "Student 24",
               "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
@@ -2697,8 +2931,8 @@
           ],
           "valueList": [
             {
-              "ID": "(2)",
-              "name": "Student 2",
+              "ID": "(24)",
+              "name": "Student 24",
               "gender": "FEMALE",
               "contact": "111",
               "address": "jalan",
@@ -2737,8 +2971,8 @@
         },
         {
           "val0": {
-            "ID": "(3)",
-            "name": "Student 3",
+            "ID": "(25)",
+            "name": "Student 25",
             "gender": "MALE",
             "contact": "111",
             "address": "jalan",
@@ -2775,8 +3009,8 @@
           },
           "valueArray": [
             {
-              "ID": "(3)",
-              "name": "Student 3",
+              "ID": "(25)",
+              "name": "Student 25",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -2814,8 +3048,8 @@
           ],
           "valueList": [
             {
-              "ID": "(3)",
-              "name": "Student 3",
+              "ID": "(25)",
+              "name": "Student 25",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -2854,477 +3088,9 @@
         },
         {
           "val0": {
-            "ID": "(4)",
-            "name": "Student 4",
+            "ID": "(26)",
+            "name": "Student 26",
             "gender": "MALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "WIDOWED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(4)",
-              "name": "Student 4",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(4)",
-              "name": "Student 4",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
-        },
-        {
-          "val0": {
-            "ID": "(5)",
-            "name": "Student 5",
-            "gender": "MALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "WIDOWED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(5)",
-              "name": "Student 5",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(5)",
-              "name": "Student 5",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "WIDOWED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
-        },
-        {
-          "val0": {
-            "ID": "(6)",
-            "name": "Student 6",
-            "gender": "MALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "DIVORCED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(6)",
-              "name": "Student 6",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "DIVORCED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(6)",
-              "name": "Student 6",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "DIVORCED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
-        },
-        {
-          "val0": {
-            "ID": "(7)",
-            "name": "Student 7",
-            "gender": "MALE",
-            "contact": "111",
-            "address": "jalan",
-            "email": "@m.com",
-            "dob": "1/1/22",
-            "marital": "DIVORCED"
-          },
-          "val1": {
-            "module": "testing",
-            "result": "80",
-            "grade": "A",
-            "cgpa": "4.0"
-          },
-          "val2": {
-            "CGPA": "4.0",
-            "Academic_Degrees": "Degree",
-            "Class": "Software Engineering",
-            "Name": "Chin",
-            "StudentID": "TP059235"
-          },
-          "val3": {
-            "outstandingAmount": 0.0,
-            "accumulatedPaid": 9999.0,
-            "totalAmount": 9999.0,
-            "StudentID": "1222",
-            "dueDate": "12/99/9999"
-          },
-          "val4": {
-            "transactionID": "1",
-            "date": "2/22/22",
-            "amount": 223.0,
-            "receiptNumber": "223",
-            "studentID": "1"
-          },
-          "valueArray": [
-            {
-              "ID": "(7)",
-              "name": "Student 7",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "DIVORCED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ],
-          "valueList": [
-            {
-              "ID": "(7)",
-              "name": "Student 7",
-              "gender": "MALE",
-              "contact": "111",
-              "address": "jalan",
-              "email": "@m.com",
-              "dob": "1/1/22",
-              "marital": "DIVORCED"
-            },
-            {
-              "module": "testing",
-              "result": "80",
-              "grade": "A",
-              "cgpa": "4.0"
-            },
-            {
-              "CGPA": "4.0",
-              "Academic_Degrees": "Degree",
-              "Class": "Software Engineering",
-              "Name": "Chin",
-              "StudentID": "TP059235"
-            },
-            {
-              "outstandingAmount": 0.0,
-              "accumulatedPaid": 9999.0,
-              "totalAmount": 9999.0,
-              "StudentID": "1222",
-              "dueDate": "12/99/9999"
-            },
-            {
-              "transactionID": "1",
-              "date": "2/22/22",
-              "amount": 223.0,
-              "receiptNumber": "223",
-              "studentID": "1"
-            }
-          ]
-        },
-        {
-          "val0": {
-            "ID": "(8)",
-            "name": "Student 8",
-            "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
             "email": "@m.com",
@@ -3360,9 +3126,9 @@
           },
           "valueArray": [
             {
-              "ID": "(8)",
-              "name": "Student 8",
-              "gender": "FEMALE",
+              "ID": "(26)",
+              "name": "Student 26",
+              "gender": "MALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
@@ -3399,9 +3165,9 @@
           ],
           "valueList": [
             {
-              "ID": "(8)",
-              "name": "Student 8",
-              "gender": "FEMALE",
+              "ID": "(26)",
+              "name": "Student 26",
+              "gender": "MALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
@@ -3439,9 +3205,9 @@
         },
         {
           "val0": {
-            "ID": "(9)",
-            "name": "Student 9",
-            "gender": "FEMALE",
+            "ID": "(27)",
+            "name": "Student 27",
+            "gender": "MALE",
             "contact": "111",
             "address": "jalan",
             "email": "@m.com",
@@ -3477,9 +3243,9 @@
           },
           "valueArray": [
             {
-              "ID": "(9)",
-              "name": "Student 9",
-              "gender": "FEMALE",
+              "ID": "(27)",
+              "name": "Student 27",
+              "gender": "MALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
@@ -3516,9 +3282,9 @@
           ],
           "valueList": [
             {
-              "ID": "(9)",
-              "name": "Student 9",
-              "gender": "FEMALE",
+              "ID": "(27)",
+              "name": "Student 27",
+              "gender": "MALE",
               "contact": "111",
               "address": "jalan",
               "email": "@m.com",
@@ -3553,27 +3319,128 @@
               "studentID": "1"
             }
           ]
-        }
-      ]
-    }
-  },
-  {
-    "header": {
-      "index": 0,
-      "currHash": "ca4b755c6fc2fd0a26be4a6400cc85a280834bac92720c41708adb38ba088929",
-      "prevHash": "4a8076e19237bbf851aeb217670120cb047cfca0ac8efa2a3afaba39a4c99712",
-      "timeStamp": 1661255145731
-    },
-    "record": {
-      "merkleRoot": "285087e9573e97e38c3c9d65054e9dcaa1330ed094bf85f0e898eaf71ab59268",
-      "hashes": [
-        "285087e9573e97e38c3c9d65054e9dcaa1330ed094bf85f0e898eaf71ab59268"
-      ],
-      "recordList": [
+        },
         {
           "val0": {
-            "ID": "(11)",
-            "name": "Student 11",
+            "ID": "(28)",
+            "name": "Student 28",
+            "gender": "MALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "DIVORCED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(28)",
+              "name": "Student 28",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(28)",
+              "name": "Student 28",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "DIVORCED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        },
+        {
+          "val0": {
+            "ID": "(29)",
+            "name": "Student 29",
             "gender": "MALE",
             "contact": "111",
             "address": "jalan",
@@ -3610,8 +3477,8 @@
           },
           "valueArray": [
             {
-              "ID": "(11)",
-              "name": "Student 11",
+              "ID": "(29)",
+              "name": "Student 29",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -3649,8 +3516,8 @@
           ],
           "valueList": [
             {
-              "ID": "(11)",
-              "name": "Student 11",
+              "ID": "(29)",
+              "name": "Student 29",
               "gender": "MALE",
               "contact": "111",
               "address": "jalan",
@@ -3686,12 +3553,144 @@
               "studentID": "1"
             }
           ]
-        },
+        }
+      ]
+    }
+  },
+  {
+    "header": {
+      "index": 0,
+      "currHash": "57f9aa8256f20454584e97e43009d32222f4abb1115b0160bce349949bc3bd3b",
+      "prevHash": "2e597464dd157e80baaea4888eb7a33ef97e2efa2a43d99482ad52dfbd7335e1",
+      "timeStamp": 1661263264415
+    },
+    "record": {
+      "merkleRoot": "f55d7ce48f3134230ac3ba6987a14a5e7dc98c61300ee455799944bcc1b56c7d",
+      "hashes": [
+        "f55d7ce48f3134230ac3ba6987a14a5e7dc98c61300ee455799944bcc1b56c7d"
+      ],
+      "recordList": [
         {
           "val0": {
-            "ID": "(12)",
-            "name": "Student 12",
-            "gender": "FEMALE",
+            "ID": "(30)",
+            "name": "Student 30",
+            "gender": "MALE",
+            "contact": "111",
+            "address": "jalan",
+            "email": "@m.com",
+            "dob": "1/1/22",
+            "marital": "SEPARATED"
+          },
+          "val1": {
+            "module": "testing",
+            "result": "80",
+            "grade": "A",
+            "cgpa": "4.0"
+          },
+          "val2": {
+            "CGPA": "4.0",
+            "Academic_Degrees": "Degree",
+            "Class": "Software Engineering",
+            "Name": "Chin",
+            "StudentID": "TP059235"
+          },
+          "val3": {
+            "outstandingAmount": 0.0,
+            "accumulatedPaid": 9999.0,
+            "totalAmount": 9999.0,
+            "StudentID": "1222",
+            "dueDate": "12/99/9999"
+          },
+          "val4": {
+            "transactionID": "1",
+            "date": "2/22/22",
+            "amount": 223.0,
+            "receiptNumber": "223",
+            "studentID": "1"
+          },
+          "valueArray": [
+            {
+              "ID": "(30)",
+              "name": "Student 30",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "SEPARATED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ],
+          "valueList": [
+            {
+              "ID": "(30)",
+              "name": "Student 30",
+              "gender": "MALE",
+              "contact": "111",
+              "address": "jalan",
+              "email": "@m.com",
+              "dob": "1/1/22",
+              "marital": "SEPARATED"
+            },
+            {
+              "module": "testing",
+              "result": "80",
+              "grade": "A",
+              "cgpa": "4.0"
+            },
+            {
+              "CGPA": "4.0",
+              "Academic_Degrees": "Degree",
+              "Class": "Software Engineering",
+              "Name": "Chin",
+              "StudentID": "TP059235"
+            },
+            {
+              "outstandingAmount": 0.0,
+              "accumulatedPaid": 9999.0,
+              "totalAmount": 9999.0,
+              "StudentID": "1222",
+              "dueDate": "12/99/9999"
+            },
+            {
+              "transactionID": "1",
+              "date": "2/22/22",
+              "amount": 223.0,
+              "receiptNumber": "223",
+              "studentID": "1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]         "gender": "FEMALE",
             "contact": "111",
             "address": "jalan",
             "email": "@m.com",

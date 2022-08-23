@@ -1,5 +1,6 @@
 package bcd.app;
 
+import bcd.client.ManagementUser;
 import bcd.client.User;
 import bcd.config.GeneralOperation;
 import bcd.data.*;
@@ -25,8 +26,9 @@ public class testingApp {
         User u = new User();
         List<Block> blocks = Blockchain.retrieve_chain();
         Block lastBlock = blocks.get(blocks.size()-1);
-        StudentRecord sr = lastBlock.getRecord();
-        u.viewRecord(sr,"(1)");
+        StudentRecord sr = new StudentRecord();
+
+        u.viewRecord(sr,"(30)");
     }
 
 
@@ -45,35 +47,8 @@ public class testingApp {
     }
 
     public static void testBlockchain() throws Exception{//can be port to create function
-        File f = new File(GeneralOperation.getMaster_binary());
-        StudentRecord record = new StudentRecord();
-        for(int i = 0; i < 31; i ++){
-            StudentInformation si = new StudentInformation("Student " + i, "("+i+")");
-            StudentResult sr = new StudentResult();
-            Certificate c = new Certificate();
-            OutstandingFees of = new OutstandingFees();
-            PaymentTransaction pf = new PaymentTransaction();
-            Quintet myQuintet = new Quintet<>(si,sr,c,of,pf);
-            System.out.println("Loop " + (i+1) + " added this student inside: " + si.getName());
-            if(!record.add(myQuintet)){
-
-                if(!f.exists()||Blockchain.retrieve_chain()==null){
-                    Blockchain.genesis(record);
-                }else{
-                    Block previousBlock = Blockchain.retrieve_chain().get(Blockchain.retrieve_chain().size()-1);
-                    Block newBlock = new Block(previousBlock.getHeader().getCurrHash(),record);
-                    Blockchain.nextBlock(newBlock);
-
-                }
-                record = new StudentRecord();
-                record.add(myQuintet);
-            }
-        }
-        List<Block> bc = Blockchain.retrieve_chain();
-        Block lastBlock = bc.get(bc.size()-1);
-        Block leftOut = new Block(lastBlock.getHeader().getCurrHash(),record);
-        Blockchain.nextBlock(leftOut);
-        Blockchain.distribute();
+        ManagementUser mu = new ManagementUser();
+        mu.createRecord();
 
 
     }

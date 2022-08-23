@@ -3,17 +3,19 @@ package bcd.client;
 import bcd.config.GeneralOperation;
 import bcd.crypto.Asymmetric;
 import bcd.crypto.KeyAccess;
+import bcd.data.*;
 import bcd.function.Block;
 import bcd.function.Blockchain;
-import bcd.function.Hashing;
 import bcd.function.StudentRecord;
 import bcd.signature.CustomedSign;
+import org.javatuples.Quintet;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class User {
@@ -49,36 +51,25 @@ public class User {
     }
     public void viewRecord(StudentRecord record, String id){
         if(isCorrect(record)){
-            record.getRecordList().stream().filter(objects -> objects.getValue0().getID().equals(id)).forEach(System.out::println);
+            List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>>
+                    meet_requirement = record.getRecordList().stream()
+                                             .filter(objects -> objects.getValue0().getID().equals(id))
+                                             .toList();
+            if(meet_requirement.size()>0)
+                meet_requirement.forEach(System.out::println);
+            else
+                System.out.println("No student with this id " + id + " under this record.\n" + record);
+
         }
+        else
+            System.out.println("Record does not exist in the blockchain.");
     }
 
     private boolean isCorrect(StudentRecord record) {
         String mekleRoot = record.getMerkleRoot();
         List<Block> blocks = Blockchain.retrieve_chain();
-        Block block_record = blocks.get(blocks.indexOf(record));
-        StudentRecord verify_record = block_record.getRecord();
-        String verify_MekleRoot = verify_record.getMerkleRoot();
-        if(mekleRoot.equals(verify_MekleRoot))
-            return true;
-        else{
-            List<String> hashes = record.getHashes();
-            List<String> verify_hashes = verify_record.getHashes();
-            if(hashes.size()>verify_hashes.size()){
-                System.out.println("Tampered! This record does not exist in blockchain.");
-                verify_hashes.forEach(hashes::remove);
-                hashes.forEach(System.out::println);
-            } else if (hashes.size() < verify_hashes.size()) {
-                System.out.println("Tampered! This record has been deleted");
-                hashes.forEach(verify_hashes::remove);
-                verify_hashes.forEach(System.out::println);
-            }else{
-                List<String> differentHashes = hashes.stream().filter(s -> !verify_hashes.contains(s)).collect(Collectors.toList());
-                System.out.println("These records are being tampered.");
-                record.getRecordList().stream().filter(objects -> differentHashes.contains(Hashing.hash(objects.toString().getBytes(),GeneralOperation.getSha_Algo()))).forEach(System.out::println);
-            }
-            return false;
-        }
+        List<StudentRecord> studentRecords = blocks.stream().filter(block->block.getRecord().getMerkleRoot().equals(mekleRoot)).map(Block::getRecord).toList();
+        return studentRecords.size()>0;
     }
 
     public void register(String email){

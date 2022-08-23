@@ -9,7 +9,7 @@ public class StudentResult implements Serializable {
     private String grade;
     private String cgpa;
 
-    public StudentResult(String module, double credit, String result, String grade, String cgpa) {
+    public StudentResult(String module, String result, String grade, String name, String studentID) {
         this.module = module;
         this.credit = credit;
         this.result = result;

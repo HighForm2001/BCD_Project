@@ -1,6 +1,9 @@
 package bcd.data;
 
+import org.javatuples.Quintet;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Certificate implements Serializable {
     private final String CGPA;
@@ -42,7 +45,9 @@ public class Certificate implements Serializable {
         Class = "Software Engineering";
         Name = "Chin";
         StudentID = "TP059235";
+
     }
+
 
     @Override
     public String toString() {

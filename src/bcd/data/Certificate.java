@@ -23,7 +23,13 @@ public class Certificate implements Serializable {
     public String getclass() {
         return Class;
     }
-
+    public Certificate(String name, String StudentID){
+        this.Name = name;
+        this.StudentID = StudentID;
+        CGPA = "4.0";
+        Academic_Degrees = "Degree";
+        Class = "Software Engineering";
+    }
 
     public String getName() {
         return Name;
@@ -51,12 +57,12 @@ public class Certificate implements Serializable {
 
     @Override
     public String toString() {
-        return "Certificate{" +
-                "CGPA='" + CGPA + '\'' +
-                ", Academic_Degrees='" + Academic_Degrees + '\'' +
-                ", Class='" + Class + '\'' +
-                ", Name='" + Name + '\'' +
-                ", StudentID='" + StudentID + '\'' +
-                '}';
+        return "\n======================\nCertificate\n======================\n" +
+                "CGPA = '" + CGPA + '\'' +
+                "\nAcademic_Degrees = '" + Academic_Degrees + '\'' +
+                "\nClass = '" + Class + '\'' +
+                "\nName = '" + Name + '\'' +
+                "\nStudentID = '" + StudentID + '\'' +
+                '\n';
     }
 }

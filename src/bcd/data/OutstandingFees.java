@@ -36,6 +36,13 @@ public class OutstandingFees implements Serializable {
         StudentID = "1222";
         this.dueDate = "12/99/9999";
     }
+    public OutstandingFees(String StudentID){
+        this.StudentID = StudentID;
+        this.accumulatedPaid = 9999;
+        this.totalAmount = 9999;
+        this.outstandingAmount = totalAmount - accumulatedPaid;
+        this.dueDate = "12/99/9999";
+    }
 
     public OutstandingFees(double accumulatedPaid, double totalAmount, String studentID, String dueDate) {
 
@@ -48,8 +55,8 @@ public class OutstandingFees implements Serializable {
     @Override
     public String toString(){
         if(outstandingAmount!=0){
-            return "Student ID "  + StudentID + " has outstanding fee of RM" + outstandingAmount + ". Due date is: " + dueDate;
+            return "\nStudent ID "  + StudentID + " has outstanding fee of RM" + outstandingAmount + ". Due date is: " + dueDate +"\n";
         }
-        return "Student ID "  + StudentID + " has fully paid the tuition fee. Total amount is RM "  + totalAmount;
+        return "\nStudent ID "  + StudentID + " has fully paid the tuition fee. Total amount is RM "  + totalAmount +"\n";
     }
 }

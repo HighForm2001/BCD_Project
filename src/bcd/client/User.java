@@ -10,13 +10,13 @@ import bcd.function.StudentRecord;
 import bcd.signature.CustomedSign;
 import org.javatuples.Quintet;
 
+import javax.swing.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
+import java.util.function.Consumer;
 
 public class User {
     private final CustomedSign sign = new CustomedSign();
@@ -24,7 +24,7 @@ public class User {
     private final String path = GeneralOperation.get_encrypted_decrypted_path();
     public User() {
     }
-    public boolean login(String email){
+    public boolean login(String email, JTextField textField1){
         try{
             File f = new File(path);
             BufferedReader br = new BufferedReader(new FileReader(f));
@@ -32,12 +32,10 @@ public class User {
             while(checkLine!=null){
                 if(crypting.decrypt(checkLine,KeyAccess.getPrivateKey()).equals(email)){
                     String signature = sign.sign(email);
-                    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-                    checkLine = r.readLine();
-                    r.close();
-                    return sign.verify(email,checkLine +signature);
+                    textField1.setText(signature);
+                    return true;
                 }
-                System.out.println(checkLine);
+//                System.out.println(checkLine);
                 checkLine = br.readLine();
             }
             br.close();
@@ -46,31 +44,18 @@ public class User {
         }
         return false;
     }
+    public boolean verify(String email, JTextField textField1) {
+        try {
+            return sign.verify(email, textField1.getText());
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return false;
+    }
     public void logout(){
         System.out.println("Logout successfully");
     }
-    public void viewRecord(StudentRecord record, String id){
-        if(isCorrect(record)){
-            List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>>
-                    meet_requirement = record.getRecordList().stream()
-                                             .filter(objects -> objects.getValue0().getID().equals(id))
-                                             .toList();
-            if(meet_requirement.size()>0)
-                meet_requirement.forEach(System.out::println);
-            else
-                System.out.println("No student with this id " + id + " under this record.\n" + record);
 
-        }
-        else
-            System.out.println("Record does not exist in the blockchain.");
-    }
-
-    private boolean isCorrect(StudentRecord record) {
-        String mekleRoot = record.getMerkleRoot();
-        List<Block> blocks = Blockchain.retrieve_chain();
-        List<StudentRecord> studentRecords = blocks.stream().filter(block->block.getRecord().getMerkleRoot().equals(mekleRoot)).map(Block::getRecord).toList();
-        return studentRecords.size()>0;
-    }
 
     public void register(String email){
         try {
@@ -79,7 +64,7 @@ public class User {
             String checkLine = br.readLine();
             while(checkLine!= null){
                 if(crypting.decrypt(checkLine,KeyAccess.getPrivateKey()).equals(email)){
-                    System.out.println("This is a registered email!");
+                    JOptionPane.showMessageDialog(null,"This is a registered email\nDirecting to Login Page!");
                     return;
                 }
                 checkLine = br.readLine();
@@ -89,6 +74,7 @@ public class User {
                 Files.writeString(Paths.get(path),cipherText+"\n",StandardOpenOption.APPEND);
             else
                 Files.writeString(Paths.get(path),cipherText+"\n", StandardOpenOption.CREATE);
+            JOptionPane.showMessageDialog(null,"Email registered successfully.\nDirecting to Login Page");
         }catch(Exception e){
             e.printStackTrace();
         }

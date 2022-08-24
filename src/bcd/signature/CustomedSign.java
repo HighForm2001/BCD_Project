@@ -11,9 +11,7 @@ import java.util.Base64;
 
 public class CustomedSign {//one time use only
     private Signature sig;
-
     private KeyGen keyGen;
-
     private KeyPair keyPair;
     {
         try{
@@ -56,14 +54,5 @@ public class CustomedSign {//one time use only
         sig.initVerify(publicKey);
         sig.update(data.getBytes());
         return sig.verify(Base64.getDecoder().decode(signature));
-    }
-    public static void main(String[] args)throws Exception{
-        String data = "jychin47@gmail.com";
-        CustomedSign sign = new CustomedSign();
-        System.out.println("Date: " + data);
-        String signature = sign.sign(data);
-//        String signature2 = sign.sign(data);
-        System.out.println("Signature: " +signature);
-
     }
 }

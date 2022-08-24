@@ -2,8 +2,6 @@ package bcd.crypto;
 
 import javax.crypto.Cipher;
 import java.security.Key;
-import java.security.PrivateKey;
-import java.security.PublicKey;
 import java.util.Base64;
 
 public class Asymmetric extends Crypto{//this one done
@@ -11,9 +9,9 @@ public class Asymmetric extends Crypto{//this one done
         super(param);
     }
     public String encrypt(String data, Key key) throws Exception{
-        String cipherText = null;
+        String cipherText;
         //initialize
-        cipher.init(Cipher.ENCRYPT_MODE,(PublicKey)key);
+        cipher.init(Cipher.ENCRYPT_MODE,key);
         //encrypt
         byte[] cipherBytes = cipher.doFinal(data.getBytes());
         //convert to string
@@ -22,10 +20,10 @@ public class Asymmetric extends Crypto{//this one done
     }
     public String decrypt(String cipherText, Key key) throws Exception{
         //initialization
-        cipher.init(Cipher.DECRYPT_MODE,(PrivateKey)key);
+        cipher.init(Cipher.DECRYPT_MODE,key);
         //decrypt
-        byte[] cipherbytes = Base64.getDecoder().decode(cipherText.getBytes());
-        byte[] dataBytes = cipher.doFinal(cipherbytes);
+        byte[] cipherBytes = Base64.getDecoder().decode(cipherText.getBytes());
+        byte[] dataBytes = cipher.doFinal(cipherBytes);
         return new String(dataBytes);
     }
 }

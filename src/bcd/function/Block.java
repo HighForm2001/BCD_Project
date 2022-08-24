@@ -38,7 +38,6 @@ public class Block implements Serializable {
         header.setCurrHash((blockHash));
         setRecord(record);
     }
-
     private byte[] getBytes() {
         try(ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
             ObjectOutputStream out = new ObjectOutputStream(byteStream);)
@@ -51,6 +50,6 @@ public class Block implements Serializable {
             return null;
         }
     }
-    public void setRecord(StudentRecord record){this.record = record;}
+    private void setRecord(StudentRecord record){this.record = record;}
     public StudentRecord getRecord(){return record;}
 }

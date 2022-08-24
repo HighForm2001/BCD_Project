@@ -89,15 +89,15 @@ public class StudentInformation implements Serializable {
 
     @Override
     public String toString() {
-        return "StudentInformation{" +
-                "ID='" + ID + '\'' +
-                ", name='" + name + '\'' +
-                ", gender=" + gender +
-                ", contact='" + contact + '\'' +
-                ", address='" + address + '\'' +
-                ", email='" + email + '\'' +
-                ", dob='" + dob + '\'' +
-                ", marital=" + marital +
-                '}';
+        return "\n======================\nStudentInformation\n======================\n" +
+                "ID = '" + ID + '\'' +
+                "\nname = '" + name + '\'' +
+                "\ngender = " + gender +
+                "\ncontact = '" + contact +'\'' +
+                "\naddress = '" + address + '\'' +
+                "\nemail = '" + email +'\''+
+                "\ndob = '" + dob +'\''+
+                "\n marital = " + marital +
+                '\n';
     }
 }

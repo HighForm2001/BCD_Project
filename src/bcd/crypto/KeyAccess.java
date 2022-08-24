@@ -11,7 +11,7 @@ import java.security.PublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-public class KeyAccess { // this one done
+public class KeyAccess {
     public static PublicKey getPublicKey() throws Exception{
         byte[] keyBytes = Files.readAllBytes(Paths.get(GeneralOperation.get_public_path()));
         if(keyBytes.length < 1) {

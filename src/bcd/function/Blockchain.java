@@ -11,19 +11,14 @@ import java.util.LinkedList;
 
 
 public class Blockchain {
-    //master-binary-file
     public static final String master_binary = GeneralOperation.getMaster_binary();
     public static final String record_file = GeneralOperation.getRecord_path();
-    private static LinkedList<Block> DB = new LinkedList<>();//data structure
-
-    //the very first block - genesis()
+    private static LinkedList<Block> DB = new LinkedList<>();
     public static void genesis(StudentRecord record){
         Block genesis = new Block("0",record);
         DB.add(genesis);
         Blockchain.presist();
     }
-
-
     public static void nextBlock(Block newBlock){
         DB = Blockchain.retrieve_chain();
         DB.add(newBlock);
@@ -40,7 +35,6 @@ public class Blockchain {
             e.printStackTrace();
             return null;
         }
-
     }
     public static void presist(){
         try (
@@ -65,8 +59,6 @@ public class Blockchain {
             e.printStackTrace();
         }
     }
-
-
 }
 
 

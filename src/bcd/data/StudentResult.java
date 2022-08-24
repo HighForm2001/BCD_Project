@@ -46,12 +46,12 @@ public class StudentResult implements Serializable {
 
     @Override
     public String toString() {
-        return "StudentResult{" +
-                "module='" + module + '\'' +
-                ", credit=" + credit +
-                ", result='" + result + '\'' +
-                ", grade='" + grade + '\'' +
-                ", cgpa='" + cgpa + '\'' +
-                '}';
+        return "\n======================\nStudentResult\n======================\n" +
+                "module = '" + module + '\'' +
+                "\ncredit = " + credit +
+                "\nresult = '" + result + '\'' +
+                "\ngrade = '" + grade + '\'' +
+                "\ncgpa = '" + cgpa + '\'' +
+                "\n";
     }
 }

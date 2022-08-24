@@ -23,6 +23,13 @@ public class PaymentTransaction implements Serializable {
         this.receiptNumber = "223";
         this.studentID = "1";
     }
+    public PaymentTransaction(String transactionID, String studentID){
+        this.transactionID = transactionID;
+        this.date = "2/22/22";
+        this.amount = 223;
+        this.receiptNumber = "223";
+        this.studentID = studentID;
+    }
 
     public String getTransactionID() {
         return transactionID;
@@ -46,12 +53,12 @@ public class PaymentTransaction implements Serializable {
 
     @Override
     public String toString() {
-        return "PaymentTransaction{" +
-                "transactionID='" + transactionID + '\'' +
-                ", date='" + date + '\'' +
-                ", amount= RM " + amount +
-                ", receiptNumber='" + receiptNumber + '\'' +
-                ", studentID='" + studentID + '\'' +
-                '}';
+        return "\n======================\nPaymentTransaction\n======================\n" +
+                "transactionID = '" + transactionID + '\'' +
+                "\ndate = '" + date + '\'' +
+                "\namount = RM " + amount +
+                "\nreceiptNumber = '" + receiptNumber + '\''+
+                "\nstudentID = '" + studentID + '\'' +
+                '\n';
     }
 }

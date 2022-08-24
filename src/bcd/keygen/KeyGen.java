@@ -13,7 +13,6 @@ import java.util.Base64;
 public class KeyGen {
     private KeyPairGenerator kg;
     private KeyPair kp;
-
     public KeyGen() {
         try {
             kg = KeyPairGenerator.getInstance(GeneralOperation.getRsa_Algo());
@@ -29,20 +28,13 @@ public class KeyGen {
             keyGen.kp = keyGen.kg.generateKeyPair();
             PublicKey pbk = keyGen.kp.getPublic();
             PrivateKey pvk = keyGen.kp.getPrivate();
-
-            //write pbk and pvk into the files
-
             write_file(pbk.getEncoded(), GeneralOperation.get_public_path());
             write_file(pvk.getEncoded(), GeneralOperation.get_private_path());
         }catch(Exception e){
             e.printStackTrace();
         }
     }
-    public static void main(String[] args){
-        createKeyPair();
-    }
-
-    private static void write_file(byte[] encoded, String path) {
+       private static void write_file(byte[] encoded, String path) {
         byte[] both = Arrays.copyOf(encoded, encoded.length + 1);
         System.arraycopy("\n".getBytes(),0,both,encoded.length,1); //append new line
         File f = new File(path);

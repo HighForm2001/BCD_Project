@@ -23,7 +23,6 @@ public class StudentRecord implements Serializable {
         this.hashes = mt.getHashes();
     }
     private List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList;
-
     public List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> getRecordList() {
         return recordList;
     }

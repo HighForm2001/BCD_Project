@@ -17,7 +17,6 @@ public class LoginPage extends JFrame {
     private JButton loginButton;
     private JButton signUpButton;
     private User u = new User();
-
     public LoginPage(){
         setContentPane(panel1);
         setTitle("Login");
@@ -47,8 +46,5 @@ public class LoginPage extends JFrame {
             Register r = new Register();
             dispose();
         });
-    }
-    public static void main(String[] args){
-        LoginPage lp = new LoginPage();
     }
 }

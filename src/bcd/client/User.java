@@ -3,25 +3,18 @@ package bcd.client;
 import bcd.config.GeneralOperation;
 import bcd.crypto.Asymmetric;
 import bcd.crypto.KeyAccess;
-import bcd.data.*;
-import bcd.function.Block;
-import bcd.function.Blockchain;
-import bcd.function.StudentRecord;
 import bcd.signature.CustomedSign;
-import org.javatuples.Quintet;
 
 import javax.swing.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.List;
-import java.util.function.Consumer;
 
 public class User {
     private final CustomedSign sign = new CustomedSign();
     private final Asymmetric crypting = new Asymmetric(GeneralOperation.getRsa_Algo());
-    private final String path = GeneralOperation.get_encrypted_decrypted_path();
+    private final String path = GeneralOperation.getEncrypted_email();
     public User() {
     }
     public boolean login(String email, JTextField textField1){

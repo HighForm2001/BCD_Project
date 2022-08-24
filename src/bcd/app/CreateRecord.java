@@ -19,9 +19,9 @@ public class CreateRecord {
         for( int i = 0; i < 31; i ++){
             StudentInformation si = new StudentInformation("Student " + id, "("+id+")");
             StudentResult sr = new StudentResult();
-            Certificate c = new Certificate("Student " + id, "("+id+")");
-            OutstandingFees of = new OutstandingFees("("+id+")");
-            PaymentTransaction pf = new PaymentTransaction("Transaction " + id,"("+id+")");
+            Certificate c = new Certificate();
+            OutstandingFees of = new OutstandingFees();
+            PaymentTransaction pf = new PaymentTransaction("Transaction " + id);
             Quintet myQuintet = new Quintet<>(si,sr,c,of,pf);
             if(!record.add(myQuintet)){
                 if(!f.exists()|| Blockchain.retrieve_chain()==null){

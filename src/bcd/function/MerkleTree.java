@@ -9,8 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MerkleTree {
-
-    private List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList;
+    private final List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList;
     private String root = "0";
     private List<String> hashes = new LinkedList<>();
     public String getRoot(){return root;}
@@ -19,17 +18,13 @@ public class MerkleTree {
         this.recordList = recordList;
     }
     private static MerkleTree instance;
-    public static MerkleTree getInstance(List recordList){
+    public static MerkleTree getInstance(List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> recordList){
         if (instance == null)
-            return new MerkleTree(recordList);
-        else
-            return instance;
+            instance =  new MerkleTree(recordList);
+        return instance;
     }
-
     public void build(){
-        List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>>tempList = new ArrayList<>();
-        for(Quintet q: this.recordList)
-            tempList.add(q);
+        List<Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction>> tempList = new ArrayList<>(this.recordList);
         List<String> hashes = genRecordHashList_quintet(tempList);
         while( hashes.size() != 1)
             hashes = genRecordHashList_string(hashes);
@@ -42,7 +37,7 @@ public class MerkleTree {
         while(i < recordList.size()){
             Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction> left = recordList.get(i); //这边还要改
             i ++;
-            Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction> right = null;
+            Quintet<StudentInformation, StudentResult, Certificate, OutstandingFees, PaymentTransaction> right;
             String hashing;
             if(i != recordList.size()) {
                 right = recordList.get(i);

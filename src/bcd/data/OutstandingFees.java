@@ -6,7 +6,6 @@ public class OutstandingFees implements Serializable {
     private double outstandingAmount;
     private double accumulatedPaid;
     private double totalAmount;
-    private String StudentID;
     private String dueDate;
 
     public double getOutstandingAmount() {
@@ -21,42 +20,28 @@ public class OutstandingFees implements Serializable {
         return totalAmount;
     }
 
-    public String getStudentID() {
-        return StudentID;
-    }
-
     public String getDueDate() {
         return dueDate;
     }
     public OutstandingFees(){
-
-        this.accumulatedPaid = 9999;
-        this.totalAmount = 9999;
-        this.outstandingAmount = totalAmount - accumulatedPaid;
-        StudentID = "1222";
-        this.dueDate = "12/99/9999";
-    }
-    public OutstandingFees(String StudentID){
-        this.StudentID = StudentID;
         this.accumulatedPaid = 9999;
         this.totalAmount = 9999;
         this.outstandingAmount = totalAmount - accumulatedPaid;
         this.dueDate = "12/99/9999";
     }
 
-    public OutstandingFees(double accumulatedPaid, double totalAmount, String studentID, String dueDate) {
 
+    public OutstandingFees(double accumulatedPaid, double totalAmount, String dueDate) {
         this.accumulatedPaid = accumulatedPaid;
         this.totalAmount = totalAmount;
         this.outstandingAmount = totalAmount - accumulatedPaid;
-        StudentID = studentID;
         this.dueDate = dueDate;
     }
     @Override
     public String toString(){
         if(outstandingAmount!=0){
-            return "\nStudent ID "  + StudentID + " has outstanding fee of RM" + outstandingAmount + ". Due date is: " + dueDate +"\n";
+            return "This student has outstanding fee of RM" + outstandingAmount + ". Due date is: " + dueDate +"\n";
         }
-        return "\nStudent ID "  + StudentID + " has fully paid the tuition fee. Total amount is RM "  + totalAmount +"\n";
+        return "This student has fully paid the tuition fee. Total amount is RM "  + totalAmount +"\n";
     }
 }

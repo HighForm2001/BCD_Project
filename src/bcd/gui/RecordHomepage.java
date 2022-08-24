@@ -18,7 +18,7 @@ public class RecordHomepage extends JFrame{
 
     public RecordHomepage(User u) {
         setContentPane(panel1);
-        setTitle("Login");
+        setTitle("View Record");
         setSize(450,300);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocation(GeneralOperation.getWindow_width(),GeneralOperation.getWindow_height());
